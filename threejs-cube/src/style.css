@@ -2,6 +2,7 @@ body {
     margin: 0;
   }
   
+   /* 让 canvas 全屏 */
   #sketch {
     width: 100vw;
     height: 100vh;

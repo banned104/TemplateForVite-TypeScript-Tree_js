@@ -1,7 +1,17 @@
 import * as kokomi from "kokomi.js";
 
 class Sketch extends kokomi.Base {
-    create() {};
+    create() {
+        const box = new kokomi.Box(this);
+        box.addExisting();
+
+        // 添加拖拽
+        new kokomi.OrbitControls(this);
+
+        this.update( (time:number) =>{
+            box.spin(time);
+        } );
+    };
 };
 
 const createSketch = () => {
