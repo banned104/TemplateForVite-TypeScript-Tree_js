@@ -1,10 +1,12 @@
 import { defineConfig } from 'vite'
 import babel from 'vite-plugin-babel'
+import glsl from 'vite-plugin-glsl'
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
-    babel()
+    babel(),
+    glsl()
   ],
     // 自定义静态资源处理
     build: {
